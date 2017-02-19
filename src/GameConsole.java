@@ -20,7 +20,7 @@ public class GameConsole {
 		//For input number from users.
 		Scanner input = new Scanner(System.in);
 		//Print the initial hint of the game that in GuessingGame Class.
-		System.out.println( game.getHint() ); 
+		System.out.println( "I'm thinking of number between 1 and "+game.getUpperBound()+"." ); 
 		//To save the recent input number from users.
 		int ansNumber = 0; 
 		//To control the game to be in loop.

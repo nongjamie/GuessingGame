@@ -16,7 +16,8 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[]args){
-		GuessingGame guessingGame = new GuessingGame(20); //Set UpperBound to be 20.
+		SetHint hint = new SetHint();
+		GuessingGame guessingGame = new GuessingGame(hint.getHint()); //Set UpperBound to be 20.
 		GameConsole playingGame = new GameConsole();
 		playingGame.play(guessingGame);
 	}

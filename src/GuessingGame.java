@@ -13,12 +13,12 @@ import java.util.Random; //for random numbers
 public class GuessingGame {
 	private int upperbound; //limit of the game.
 	private int secret; //the random number that is the answer of the game.
-	public String hint = "I'm thinking of number between 1 and 20.";
+	public String hint ;
 	public int count = 0; //for count the number of user's guesses.
 
 	/**
 	 * This is constructor.
-	 * The UpperBound will be 20 and secret will be random between 1 to 20.
+	 * The UpperBound will be the secret number from SetHint class and secret will be random between 1 to UpperBound.
 	 * @param upperbound of the game.
 	 */
 	public GuessingGame ( int upperbound ) { 
@@ -60,6 +60,14 @@ public class GuessingGame {
 		return count;
 	}
 
+	/**
+	 * Return a upperbound number .
+	 * @return a upperbound number.
+	 */
+	public int getUpperBound(){
+		return upperbound;
+	}
+	
 	/**
 	 * This method is to send hint depends on the input number from the user
 	 * @param number that from input number of user
