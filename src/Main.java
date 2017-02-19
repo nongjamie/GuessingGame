@@ -16,9 +16,9 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[]args){
-		GuessingGame game = new GuessingGame(20); //Set UpperBound to be 20.
-		GameConsole ui = new GameConsole();
-		ui.play(game);
+		GuessingGame guessingGame = new GuessingGame(20); //Set UpperBound to be 20.
+		GameConsole playingGame = new GameConsole();
+		playingGame.play(guessingGame);
 	}
 
 }
